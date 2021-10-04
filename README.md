@@ -6,6 +6,8 @@
 
 Simple python3 script to present power menu with wofi.
 
+Dependencies: wofi
+
 Sway binding example:
 ```
 bindsym $mod+Shift+e exec /usr/bin/wofipowermenu.py
@@ -17,7 +19,7 @@ bindsym $mod+Shift+e exec /usr/bin/wofipowermenu.py
 
 Python3 script to list windows with wofi and select to focus.
 
-Dependencies: python-gobject
+Dependencies: python-gobject, wofi
 
 Sway binding example:
 ```
