@@ -1,6 +1,9 @@
 # swaywm-scripts
 
 ## wofipowermenu.py
+
+![Power Menu](https://raw.githubusercontent.com/quangdinh/swaywm-scripts/main/screenshots/powermenu.png)
+
 Simple python3 script to present power menu with wofi.
 
 Sway binding example:
@@ -9,6 +12,9 @@ bindsym $mod+Shift+e exec /usr/bin/wofipowermenu.py
 ```
 
 ## wofiwindowswitcher.py
+
+![Window Selector](https://raw.githubusercontent.com/quangdinh/swaywm-scripts/main/screenshots/windowswitcher.png)
+
 Python3 script to list windows with wofi and select to focus.
 
 Dependencies: python-gobject
@@ -19,7 +25,12 @@ bindsym $mod+Tab exec /usr/bin/wofiwindowswitcher.py
 ```
 
 ## screenshot.sh
-Bash script for taking screenshots and pipe it to swappy for editing. Supports copying screenshot to clipboard or to file (xdg-user-dir PICTURES). Ability to take screenshot of whole screen, selected area or focused window
+
+![Screenshot with Swappy](https://raw.githubusercontent.com/quangdinh/swaywm-scripts/main/screenshots/screenshot.png)
+
+Bash script for taking screenshots and pipe it to swappy for editing. Supports copying screenshot to clipboard or to file (xdg-user-dir PICTURES). Ability to take screenshot of whole screen, selected area or focused window. If gdbus is available, it will trigger a notification as well.
+
+
 
 Dependencies: swappy, jq, slurp, grimp, xdg-user-dirs, wl-clipboard
 
