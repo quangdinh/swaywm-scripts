@@ -37,6 +37,8 @@ def get_cons(tree):
   return nodes
 
 def show_wofi(windows):
+    if len(windows) == 0 :
+      return null
   command = 'wofi -W 600 -L ' + str(len(windows)) + ' -I -d -i -b -k /dev/null -p "Window" 2>/dev/null'
   process = subprocess.Popen(command, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
   (result, _) = process.communicate(input='\n'.join(windows).encode())
